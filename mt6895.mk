@@ -280,7 +280,8 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     LineageApertureOverlayMT6895 \
-    LineageSDKOverlayMT6895
+    LineageSDKOverlayMT6895 \
+    LineageDialerMT6895
 
 # Radio
 PRODUCT_PACKAGES += \

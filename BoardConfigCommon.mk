@@ -67,6 +67,9 @@ BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2 bootconfig
 # Bootloader
 TARGET_NO_BOOTLOADER := true
 
+# Graphics
+TARGET_USES_VULKAN := true
+
 # HIDL
 DEVICE_MANIFEST_FILE += $(COMMON_PATH)/manifest.xml
 ifeq ($(TARGET_HAS_UDFPS),true)

@@ -32,11 +32,12 @@ vendor/etc/init/vendor.xiaomi.hardware.mtdservice@1.3-miteeservice.rc
 vendor/lib64/libmt_mitee@1.3.so
 
 # Secure Element
+vendor/bin/hw/vendor.xiaomi.hardware.secure_element@1.2-service
+vendor/etc/init/vendor.xiaomi.hardware.secure_element@1.2-service.rc
+vendor/lib64/libmigpese@1.0.so
 vendor/lib64/se_nq_extn_client-v1.so
 vendor/lib64/ls_nq_client-v1.so
 vendor/lib64/jcos_nq_client-v1.so
-vendor/bin/hw/android.hardware.secure_element@1.2-service-mediatek
-vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc
 
 # Trusted Execution Environment (TEE)
 vendor/bin/miteelog

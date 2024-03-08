@@ -37,7 +37,6 @@ while [ "${#}" -gt 0 ]; do
                 ;;
         --only-target-common )
                 ONLY_TARGET_COMMON=true
-                CLEAN_VENDOR=false
                 ;;
         --only-target )
                 ONLY_TARGET=true
@@ -113,7 +112,7 @@ fi
 if [ -z "${ONLY_COMMON}" ] && [ -z "${ONLY_TARGET}" ] && [ -s "${MY_DIR}/../../${VENDOR}/${DEVICE}/proprietary-files.txt" ]; then
     # Reinitialize the helper for device
     source "${MY_DIR}/../../${VENDOR}/${DEVICE}/extract-files.sh"
-    setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false "${CLEAN_VENDOR}"
+    setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false false
 
     if [ "${TARGET_TEE}" == "beanpod" ]
     then

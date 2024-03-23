@@ -103,10 +103,8 @@ BOARD_VENDOR_BOOTIMAGE_PARTITION_SIZE := 67108864
 BOARD_DTBOIMG_PARTITION_SIZE := 33554432
 BOARD_USES_METADATA_PARTITION := true
 
-ifneq ($(WITH_GMS),true)
 ifeq ($(PRODUCT_SYSTEM_PARTITIONS_FILE_SYSTEM_TYPE),ext4)
 -include vendor/lineage/config/BoardConfigReservedSize.mk
-endif
 endif
 
 # Partitions - Dynamic

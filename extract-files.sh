@@ -122,7 +122,7 @@ if [ -z "${ONLY_COMMON}" ] && [ -z "${ONLY_TARGET_COMMON}" ] && [ -s "${MY_DIR}/
     fi
 fi
 
-if [ -z "${ONLY_COMMON}" ] && [ -z "${ONLY_TARGET}" ] && [ -s "${MY_DIR}/../../${VENDOR}/${DEVICE}/proprietary-files.txt" ]; then
+if [ -z "${ONLY_FIRMWARE}" ] && [ -z "${ONLY_COMMON}" ] && [ -z "${ONLY_TARGET}" ] && [ -s "${MY_DIR}/../../${VENDOR}/${DEVICE}/proprietary-files.txt" ]; then
     # Reinitialize the helper for device
     source "${MY_DIR}/../../${VENDOR}/${DEVICE}/extract-files.sh"
     setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false false

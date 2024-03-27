@@ -3,6 +3,3 @@ persist.sys.fuse.passthrough.enable=true
 
 # HWUI
 debug.hwui.skia_atrace_enabled=false
-
-# Multi-gen LRU
-persist.device_config.mglru_native.lru_gen_config=all

@@ -87,8 +87,14 @@ TARGET_KERNEL_CONFIG := \
 	vendor/xiaomi_mt6895.config \
 	vendor/$(PRODUCT_DEVICE).config
 
-TARGET_KERNEL_DTB := \
-    vendor/mediatek/mt6895.dtb
+# Kernel - prebuilt
+TARGET_FORCE_PREBUILT_KERNEL := true
+ifeq ($(TARGET_FORCE_PREBUILT_KERNEL),true)
+TARGET_PREBUILT_KERNEL := $(COMMON_PATH)/prebuilts/kernel
+BOARD_KERNEL_SEPARATED_DTBO :=
+endif
+
+TARGET_KERNEL_DTB := $(COMMON_PATH)/prebuilts/dtb.img
 
 BOARD_KERNEL_IMAGE_NAME := Image.gz
 

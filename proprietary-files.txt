@@ -280,11 +280,7 @@ vendor/lib64/libviagpsrpc.so
 vendor/lib64/mt6895/libDR.so;SYMLINK=vendor/lib64/libDR.so
 vendor/lib64/mt6895/libmnl.so;SYMLINK=vendor/lib64/libmnl.so
 
-# HotwordEnrollment
-product/priv-app/HotwordEnrollmentOKGoogleRISCV/HotwordEnrollmentOKGoogleRISCV.apk
-product/priv-app/HotwordEnrollmentXGoogleRISCV/HotwordEnrollmentXGoogleRISCV.apk
-system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
-system_ext/framework/com.android.hotwordenrollment.common.util.jar
+
 
 # IMS
 system_ext/bin/vtservice

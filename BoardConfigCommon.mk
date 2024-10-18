@@ -94,7 +94,7 @@ TARGET_PREBUILT_KERNEL := $(COMMON_PATH)/prebuilts/kernel
 BOARD_KERNEL_SEPARATED_DTBO :=
 endif
 
-TARGET_KERNEL_DTB := $(COMMON_PATH)/prebuilts/dtb.img
+TARGET_PREBUILT_DTB := $(COMMON_PATH)/prebuilts/dtb.img
 
 BOARD_KERNEL_IMAGE_NAME := Image.gz
 

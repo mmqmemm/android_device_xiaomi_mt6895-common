@@ -61,6 +61,7 @@ BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --dtb_offset $(BOARD_DTB_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 
+
 BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2 bootconfig
 
 # Bootloader
@@ -87,14 +88,8 @@ TARGET_KERNEL_CONFIG := \
 	vendor/xiaomi_mt6895.config \
 	vendor/$(PRODUCT_DEVICE).config
 
-# Kernel - prebuilt
-TARGET_FORCE_PREBUILT_KERNEL := true
-ifeq ($(TARGET_FORCE_PREBUILT_KERNEL),true)
-TARGET_PREBUILT_KERNEL := $(COMMON_PATH)/prebuilts/kernel
-BOARD_KERNEL_SEPARATED_DTBO :=
-endif
-
-TARGET_KERNEL_DTB := $(COMMON_PATH)/prebuilts/dtb.img
+TARGET_KERNEL_DTB := \
+    vendor/mediatek/mt6895.dtb
 
 BOARD_KERNEL_IMAGE_NAME := Image.gz
 
